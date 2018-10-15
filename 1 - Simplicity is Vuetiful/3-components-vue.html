@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <div id="app">
+            <our-own-bold>Important Text</our-own-bold>
+        </div>
+        <script src="vue.js"></script>
+        <script>
+            Vue.component('our-own-bold', {
+                template: '<strong><slot></slot></strong>'
+            });
+            const edibles = [
+                'carrot', 'cheese', 'green bean', 'cucumber'
+            ];
+            new Vue({
+                el: '#app'
+            })
+        </script>
+    </body>
+</html>
